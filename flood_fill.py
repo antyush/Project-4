@@ -29,6 +29,7 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
     # If it's not a boundary or old value we can continue
     if input_board[x][y] != "x" or input_board[x][y] == new:
         return
+    #Checking if it is not any other character
     if input_board[x][y] != old:
         return
     # set current value to new value
